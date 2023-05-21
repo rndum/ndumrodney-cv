@@ -1,0 +1,388 @@
+%-------------------------
+% Resume in Latex
+% Author : Rodney Ndum
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rodney Ndum} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:upon request}{upon request}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:rndum@fsu.edu}{rndum@fsu.edu}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/ndum}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/rndum}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://rodneyndum.com}{Research}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/@30.444300842598064,-84.29546923497016}{Tallahassee, Florida}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Florida State University
+      }{Tallahassee, Florida}
+      {Ph.D. in Business Administration: Finance;   \textbf{GPA: 3.93/4.00}}{Jul 2019 \textbf{--} May 2024 (Expected)}
+
+    
+    \resumeEducationHeading
+    {University of Florida 
+    }{Gainesville, Florida}
+    {M.B.A. concentrated in Strategy;   \textbf{GPA: 3.46/4.00}}{Aug 2015 \textbf{--} May 2017}
+    {B.Sc. in Computer Science Engineering;   \textbf{GPA: 3.33/4.00 (honors)}}{Jan 2012 \textbf{--} Dec 2014}
+
+  \resumeSubHeadingListEnd
+
+
+
+%----------- ACADEMIC EXPERIENCE -----------
+
+\section{Academic Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Florida State University}{Tallahassee, Florida}
+      {Instructor of Record}{Jan 2022 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Taught Financial Modeling in Excel.}
+            \resumeItem{Taught Corporate Finance.}
+            \resumeItem{Teaching Assistant for Undergrad General Corporate Finance with 2000+ students annually.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Florida}{Gainesville, Florida}
+      {Research Assistant}{Nov 2013 \textbf{--} Mar 2016}
+        \resumeItemListStart
+            \resumeItem{Built Machine Learning, Computer Vision applications for tracking rodent gait.}
+            \resumeItem{Built hardware using FTIR technology to capture rodent gait.}
+            \resumeItem{Presented research at largest neuroscience conference in world, SFN.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PUBLICATIONS -----------
+
+\section{Publications}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{TDB}{  } \\ \vspace{3pt}
+    
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+
+%----------- Working Papers -----------
+
+\section{Working Papers}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{The Effect of Local Stock Market Participation on Local Housing Prices}{ (with C. Dougal)} \\ \vspace{3pt}
+        
+        \textbf{Spare the Rod and Spoil the Firm: The Efficacy of Punishment}{ } \\ \vspace{3pt}
+
+        \textbf{The Consequences of Government Funding on Firms:}{ } \\ \vspace{3pt}
+        
+        \textbf{Litigation Risk and Analyst Forecasts:}{ (with Y. Cheng)} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- Research in Progress -----------
+
+\section{Research in Progress}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      
+      \textbf{Sports Team Realignment and Corporate Affiliation}{ (with M. Buckwalter-Figueroa)} \\ \vspace{3pt}
+      
+      \textbf{Litigation Risk and SEO}{ (D. Autore) } \\ \vspace{3pt}
+      
+  }}
+\resumeSubHeadingListEnd
+
+
+%----------- Media Coverage -----------
+
+\section{Media Coverage}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{FSU Office of Graduate Fellowships:}{ \emph{\href{https://ogfa.fsu.edu/graduate/rodney-ndum}{\color{blue}McKnight Fellowships induction}}} \\ \vspace{3pt}
+        
+        \textbf{Poets and Quants:}{ \emph{\href{https://poetsandquants.com/2016/05/04/meet-florida-warringtons-mba-class-2017/5/}{\color{blue}Spotlight: MBA Class of 2017}}} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- Teaching  -----------
+
+\section{Teaching}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      
+      \textbf{Financial Modeling and Forecasting w/ Computers (Summer 2022)}{ Teaching Evaluation 4.85/5.0} \\ \vspace{3pt}
+      
+      \textbf{Problems in Financial Management (Spring 2022)}{ Teaching Evaluation 3.76/5.0} \\ \vspace{3pt}
+      
+  }}
+\resumeSubHeadingListEnd
+
+
+%----------- RESEARCH PRESENTATIONS -----------
+
+\section{Academic Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {2021}{}
+      {}{}
+        \resumeItemListStart
+            \resumeItem{\textbf{Florida State University} 2nd Year Paper}
+        \resumeItemListEnd
+    
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- ACADEMIC SERVICE  -----------
+
+\section{Academic Service}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      
+      \textbf{Vice President: FEDSA}{ The PhD Project, 2022 } \\ \vspace{3pt}
+      
+      \textbf{Research and Media Facilitator}{ The PhD Project, 2021} \\ \vspace{3pt}
+      
+  }}
+\resumeSubHeadingListEnd
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{McKnight Fellowship:}{ 2022 Graduate Student Fellow} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Aegus Analytics} $|$ \emph{\href{https://github.com/orgs/Aegus-Analytics}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Provides unified source for publicly available data.}
+            \resumeItem{Cleans data for easy joins with common academic data sources.}
+            \resumeItem{Provides data query features to sample data before use.}
+            \resumeItem{Provides data visualization and automated alerts and reporting to track trends.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Academia Python Library} $|$ \emph{\href{https://github.com/rndum/aegus-academia}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Library which modularizes commonly used academic classification such as Fama French industry.}
+            \resumeItem{Promotes reproducibility cability and reduces human error by providing standardized pre-coded classifications.}
+          \resumeItemListEnd
+    
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{ Python, STATA, SQL, LATEX, VBA, Google Script, DBT, Tableau} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Git, Arduino, Cloud Computing, VM, VSCode, Apache Spark, Apache Superset, Apache Druid} \\ \vspace{3pt}
+
+        \textbf{Platforms:}{ WRDS, Data.Gov, BEA, Zillow, FEC, NETS, HMDA} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ English (Native), Spanish (Elementary)}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+\section{References}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Dr. Casey Dougal: Associate Professor}{ Department of Finance, Florida State University, Phone: 850-644-2038, Email: cdougal@business.fsu.edu} \\ \vspace{3pt}
+
+        \textbf{Dr. Yingmei Cheng: Professor}{ Department of Finance, Florida State University, Phone: 850-645-7869, Email:  ycheng@business.fsu.edu} \\ \vspace{3pt}
+
+        \textbf{Dr. Irena Hutton: Associate Professor}{ Department of Finance, Florida State University, Phone: 850-645-1520, Email: ihutton@business.fsu.edu} \\ \vspace{3pt}
+
+        \textbf{Dr. Landon Mauler: Associate Professor}{ Department of Accounting, Florida State University, Phone: 850-644-7878, Email: lmauler@business.fsu.edu} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
