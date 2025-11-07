@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo:*)",
+      "Read(//usr/local/texlive/2022/bin/universal-darwin/**)",
+      "Read(//usr/local/texlive/2022/texmf-dist/scripts/latexmk/**)",
+      "Bash(/Library/TeX/texbin/pdflatex:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
